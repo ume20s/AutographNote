@@ -114,6 +114,8 @@ struct LinkInfoU5BU5D_tB7EB23E47AF29CCBEC884F9D0DB95BC97F62AE51;
 struct MeshInfoU5BU5D_t3DF8B75BF4A213334EED197AD25E432212894AC6;
 // UnityEngine.TextCore.Text.PageInfo[]
 struct PageInfoU5BU5D_tFEA2CF88695491CFC2F2A2EF6BDCC56E52B0A6D4;
+// UnityEngine.Sprite[]
+struct SpriteU5BU5D_tCEE379E10CAD9DBFA770B331480592548ED0EA1B;
 // System.Diagnostics.StackTrace[]
 struct StackTraceU5BU5D_t32FBCB20930EAF5BAE3F450FF75228E5450DA0DF;
 // System.String[]
@@ -192,6 +194,8 @@ struct SafeSerializationManager_tCBB85B95DFD1634237140CD892E82D06ECB3F5E6;
 struct Shader_tADC867D36B7876EE22427FAA2CE485105F4EE692;
 // UnityEngine.Sprite
 struct Sprite_tAFF74BC83CD68037494CB0B4F28CBDF8971CAB99;
+// UnityEngine.SpriteRenderer
+struct SpriteRenderer_t1DD7FE258F072E1FA87D6577BA27225892B8047B;
 // System.String
 struct String_t;
 // UnityEngine.TextAsset
@@ -3726,8 +3730,32 @@ struct dt_tF8471EE27817084A987A54FC6D69193AF19B2A35_StaticFields
 {
 	// System.Int32 dt::stylusColor
 	int32_t ___stylusColor_4;
+	// System.Int32 dt::backgorundColor
+	int32_t ___backgorundColor_5;
 	// System.String dt::textAGName
-	String_t* ___textAGName_5;
+	String_t* ___textAGName_6;
+};
+
+// taptoLeftArrow
+struct taptoLeftArrow_tAAC4A554F5728EA2FF8579DD9B1A09C049EFB49B  : public MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71
+{
+	// UnityEngine.GameObject taptoLeftArrow::background
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___background_4;
+	// UnityEngine.SpriteRenderer taptoLeftArrow::spriteRenderer
+	SpriteRenderer_t1DD7FE258F072E1FA87D6577BA27225892B8047B* ___spriteRenderer_5;
+	// UnityEngine.Sprite[] taptoLeftArrow::backgroundSprite
+	SpriteU5BU5D_tCEE379E10CAD9DBFA770B331480592548ED0EA1B* ___backgroundSprite_6;
+};
+
+// taptoRightArrow
+struct taptoRightArrow_t4907271B667B316B3F8D3D0DF063B5AE58EACF10  : public MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71
+{
+	// UnityEngine.GameObject taptoRightArrow::background
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___background_4;
+	// UnityEngine.SpriteRenderer taptoRightArrow::spriteRenderer
+	SpriteRenderer_t1DD7FE258F072E1FA87D6577BA27225892B8047B* ___spriteRenderer_5;
+	// UnityEngine.Sprite[] taptoRightArrow::backgroundSprite
+	SpriteU5BU5D_tCEE379E10CAD9DBFA770B331480592548ED0EA1B* ___backgroundSprite_6;
 };
 #ifdef __clang__
 #pragma clang diagnostic pop
@@ -4343,12 +4371,18 @@ IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable3288[3] =
 IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable3293[3] = 
 {
 	static_cast<int32_t>(offsetof(XmlReader_t4C709DEF5F01606ECB60B638F1BD6F6E0A9116FD_StaticFields, ___IsTextualNodeBitmap_0)),static_cast<int32_t>(offsetof(XmlReader_t4C709DEF5F01606ECB60B638F1BD6F6E0A9116FD_StaticFields, ___CanReadContentAsBitmap_1)),static_cast<int32_t>(offsetof(XmlReader_t4C709DEF5F01606ECB60B638F1BD6F6E0A9116FD_StaticFields, ___HasValueBitmap_2)),};
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable3298[4] = 
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable3305[3] = 
 {
-	static_cast<int32_t>(sizeof(RuntimeObject)),0,0,0,};
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable3307[2] = 
-{
-	static_cast<int32_t>(offsetof(dt_tF8471EE27817084A987A54FC6D69193AF19B2A35_StaticFields, ___stylusColor_4)),static_cast<int32_t>(offsetof(dt_tF8471EE27817084A987A54FC6D69193AF19B2A35_StaticFields, ___textAGName_5)),};
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable3308[2] = 
+	static_cast<int32_t>(offsetof(dt_tF8471EE27817084A987A54FC6D69193AF19B2A35_StaticFields, ___stylusColor_4)),static_cast<int32_t>(offsetof(dt_tF8471EE27817084A987A54FC6D69193AF19B2A35_StaticFields, ___backgorundColor_5)),static_cast<int32_t>(offsetof(dt_tF8471EE27817084A987A54FC6D69193AF19B2A35_StaticFields, ___textAGName_6)),};
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable3306[2] = 
 {
 	static_cast<int32_t>(offsetof(SelectDirector_tCDEB19D8AEBD7B29956BACDD45E383B94028F4B5, ___stylus_4)),static_cast<int32_t>(offsetof(SelectDirector_tCDEB19D8AEBD7B29956BACDD45E383B94028F4B5, ___inputfieldAGName_5)),};
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable3307[3] = 
+{
+	static_cast<int32_t>(offsetof(taptoLeftArrow_tAAC4A554F5728EA2FF8579DD9B1A09C049EFB49B, ___background_4)),static_cast<int32_t>(offsetof(taptoLeftArrow_tAAC4A554F5728EA2FF8579DD9B1A09C049EFB49B, ___spriteRenderer_5)),static_cast<int32_t>(offsetof(taptoLeftArrow_tAAC4A554F5728EA2FF8579DD9B1A09C049EFB49B, ___backgroundSprite_6)),};
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable3308[3] = 
+{
+	static_cast<int32_t>(offsetof(taptoRightArrow_t4907271B667B316B3F8D3D0DF063B5AE58EACF10, ___background_4)),static_cast<int32_t>(offsetof(taptoRightArrow_t4907271B667B316B3F8D3D0DF063B5AE58EACF10, ___spriteRenderer_5)),static_cast<int32_t>(offsetof(taptoRightArrow_t4907271B667B316B3F8D3D0DF063B5AE58EACF10, ___backgroundSprite_6)),};
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable3313[4] = 
+{
+	static_cast<int32_t>(sizeof(RuntimeObject)),0,0,0,};

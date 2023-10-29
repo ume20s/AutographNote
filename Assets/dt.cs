@@ -6,5 +6,6 @@ public class dt : MonoBehaviour
 {
     
     public static int stylusColor;          // ペンの色
+    public static int backgorundColor;      // 背景の色    
     public static string textAGName;        // サインの名前
 }

@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class SelectDirector : MonoBehaviour
 {
     // ゲームオブジェクト
-    GameObject[] stylus = new GameObject[8];          // カラーチップポインタ
+    GameObject[] stylus = new GameObject[8];            // カラーチップポインタ
 
     // インプットフィールド
     InputField inputfieldAGName;
@@ -23,29 +23,35 @@ public class SelectDirector : MonoBehaviour
         stylus[5] = GameObject.Find("stylus05");
         stylus[6] = GameObject.Find("stylus06");
         stylus[7] = GameObject.Find("stylus07");
-
+    
         //InputFieldコンポーネントを取得
         inputfieldAGName = GameObject.Find("inputfieldAGName").GetComponent<InputField>();
-
-        // 余計なポインタを消しておく
-        for(int i=1; i<8; i++) {
-            stylus[i].SetActive(false);
-        }
 
         // 名前を初期化
         dt.textAGName = "";
 
-    }
+        // ペンの色を初期化
+        dt.stylusColor = 0;
 
-    // インプットフィールドに入力された名前を格納
-    public void GetAGName()
-    {
-        dt.textAGName = inputfieldAGName.text;
+        // 背景番号の初期化
+        dt.backgorundColor = 0;
+
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+        // カラーチップポインタの再描画
+        for(int i=0; i<8; i++) {
+            stylus[i].SetActive(false);
+        }
+        stylus[dt.stylusColor].SetActive(true);
+    }
+
+
+    // インプットフィールドに入力された名前を格納
+    public void GetAGName()
+    {
+        dt.textAGName = inputfieldAGName.text;
     }
 }

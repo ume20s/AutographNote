@@ -1256,6 +1256,8 @@ struct ScaleU5BU5D_tE608175710457D7343DD849244BF59B58157F0EF;
 struct SelectableU5BU5D_t4160E135F02A40F75A63F787D36F31FEC6FE91A9;
 // System.Single[]
 struct SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C;
+// UnityEngine.Sprite[]
+struct SpriteU5BU5D_tCEE379E10CAD9DBFA770B331480592548ED0EA1B;
 // System.Diagnostics.StackFrame[]
 struct StackFrameU5BU5D_tF4310E8FAB8C2853A3F0843921BF9FBEC18ABBF7;
 // System.Diagnostics.StackTrace[]
@@ -2094,6 +2096,8 @@ struct SortVersion_tBB62978F95905541FC817E11F73A0B1DB392F07E;
 struct Sprite_tAFF74BC83CD68037494CB0B4F28CBDF8971CAB99;
 // UnityEngine.TextCore.Text.SpriteAsset
 struct SpriteAsset_t1D3CF1D9DC350A4690CB09DE228A8B59F2F02313;
+// UnityEngine.SpriteRenderer
+struct SpriteRenderer_t1DD7FE258F072E1FA87D6577BA27225892B8047B;
 // System.Collections.Stack
 struct Stack_tBD60B0E3125691193FBFC8DA8FFDD6630CB2CB47;
 // System.Threading.Tasks.StackGuard
@@ -43544,6 +43548,46 @@ struct UIDocument_t4186BEBCC01278F63B895274AA08AD9ADFBF4C77_StaticFields
 	int32_t ___s_CurrentUIDocumentCounter_7;
 };
 
+// colorChip00Ctrl
+struct colorChip00Ctrl_tFFD2559E34C707817CC2339820898DDB95D848A9  : public MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71
+{
+};
+
+// colorChip01Ctrl
+struct colorChip01Ctrl_t3B54A2B02AA7FA3F72AEB985C55006AD371A955B  : public MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71
+{
+};
+
+// colorChip02Ctrl
+struct colorChip02Ctrl_t8F9ABF9331C1A497FEB6E464D6E4620CE114402D  : public MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71
+{
+};
+
+// colorChip03Ctrl
+struct colorChip03Ctrl_t680F74F1CDC396743516DDB4B33CE00270A99D5F  : public MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71
+{
+};
+
+// colorChip04Ctrl
+struct colorChip04Ctrl_tBE3D7F1812C03A3269717C00E3CEBB2D5A0A0432  : public MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71
+{
+};
+
+// colorChip05Ctrl
+struct colorChip05Ctrl_tF08D5876A85C5ED16C83E629462DB06116D62511  : public MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71
+{
+};
+
+// colorChip06Ctrl
+struct colorChip06Ctrl_t6835391397F4F0FDA0190D0B63FBE367232AD97F  : public MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71
+{
+};
+
+// colorChip07Ctrl
+struct colorChip07Ctrl_tF2DF4F42D6FD5A5EF642D6EC674548E5AF63167C  : public MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71
+{
+};
+
 // dt
 struct dt_tF8471EE27817084A987A54FC6D69193AF19B2A35  : public MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71
 {
@@ -43553,8 +43597,32 @@ struct dt_tF8471EE27817084A987A54FC6D69193AF19B2A35_StaticFields
 {
 	// System.Int32 dt::stylusColor
 	int32_t ___stylusColor_4;
+	// System.Int32 dt::backgorundColor
+	int32_t ___backgorundColor_5;
 	// System.String dt::textAGName
-	String_t* ___textAGName_5;
+	String_t* ___textAGName_6;
+};
+
+// taptoLeftArrow
+struct taptoLeftArrow_tAAC4A554F5728EA2FF8579DD9B1A09C049EFB49B  : public MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71
+{
+	// UnityEngine.GameObject taptoLeftArrow::background
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___background_4;
+	// UnityEngine.SpriteRenderer taptoLeftArrow::spriteRenderer
+	SpriteRenderer_t1DD7FE258F072E1FA87D6577BA27225892B8047B* ___spriteRenderer_5;
+	// UnityEngine.Sprite[] taptoLeftArrow::backgroundSprite
+	SpriteU5BU5D_tCEE379E10CAD9DBFA770B331480592548ED0EA1B* ___backgroundSprite_6;
+};
+
+// taptoRightArrow
+struct taptoRightArrow_t4907271B667B316B3F8D3D0DF063B5AE58EACF10  : public MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71
+{
+	// UnityEngine.GameObject taptoRightArrow::background
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___background_4;
+	// UnityEngine.SpriteRenderer taptoRightArrow::spriteRenderer
+	SpriteRenderer_t1DD7FE258F072E1FA87D6577BA27225892B8047B* ___spriteRenderer_5;
+	// UnityEngine.Sprite[] taptoRightArrow::backgroundSprite
+	SpriteU5BU5D_tCEE379E10CAD9DBFA770B331480592548ED0EA1B* ___backgroundSprite_6;
 };
 
 // taptoSelect
@@ -51220,41 +51288,61 @@ const Il2CppTypeDefinitionSizes g_typeDefinitionSize3293 = { sizeof(XmlReader_t4
 extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize3294;
 const Il2CppTypeDefinitionSizes g_typeDefinitionSize3294 = { sizeof(XmlNode_t3180B9B3D5C36CD58F5327D9F13458E3B3F030AF), -1, 0, 0 };
 extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize3295;
-const Il2CppTypeDefinitionSizes g_typeDefinitionSize3295 = { sizeof(U3CModuleU3E_tDA285F13E9413BF3B79A99D6E310BE9AF3444EEB), -1, 0, 0 };
+const Il2CppTypeDefinitionSizes g_typeDefinitionSize3295 = { sizeof(U3CModuleU3E_tBB65183F1134474D09FF49B95625D25472B9BA8B), -1, 0, 0 };
 extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize3296;
-const Il2CppTypeDefinitionSizes g_typeDefinitionSize3296 = { sizeof(ConfigurationElement_tAE3EE71C256825472831FFBB7F491275DFAF089E), -1, 0, 0 };
+const Il2CppTypeDefinitionSizes g_typeDefinitionSize3296 = { sizeof(colorChip00Ctrl_tFFD2559E34C707817CC2339820898DDB95D848A9), -1, 0, 0 };
 extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize3297;
-const Il2CppTypeDefinitionSizes g_typeDefinitionSize3297 = { sizeof(ConfigurationSection_t0BC609F0151B160A4FAB8226679B62AF22539C3E), -1, 0, 0 };
+const Il2CppTypeDefinitionSizes g_typeDefinitionSize3297 = { sizeof(colorChip01Ctrl_t3B54A2B02AA7FA3F72AEB985C55006AD371A955B), -1, 0, 0 };
 extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize3298;
-const Il2CppTypeDefinitionSizes g_typeDefinitionSize3298 = { sizeof(int32_t)+ sizeof(RuntimeObject), sizeof(int32_t), 0, 0 };
+const Il2CppTypeDefinitionSizes g_typeDefinitionSize3298 = { sizeof(colorChip02Ctrl_t8F9ABF9331C1A497FEB6E464D6E4620CE114402D), -1, 0, 0 };
 extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize3299;
-const Il2CppTypeDefinitionSizes g_typeDefinitionSize3299 = { sizeof(ConfigurationPropertyCollection_t1DEB95D3283BB11A46B862E9D13710ED698B6C93), -1, 0, 0 };
+const Il2CppTypeDefinitionSizes g_typeDefinitionSize3299 = { sizeof(colorChip03Ctrl_t680F74F1CDC396743516DDB4B33CE00270A99D5F), -1, 0, 0 };
 extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize3300;
-const Il2CppTypeDefinitionSizes g_typeDefinitionSize3300 = { sizeof(ConfigurationElementCollection_t56E8398661A85A59616301BADF13026FB1492606), -1, 0, 0 };
+const Il2CppTypeDefinitionSizes g_typeDefinitionSize3300 = { sizeof(colorChip04Ctrl_tBE3D7F1812C03A3269717C00E3CEBB2D5A0A0432), -1, 0, 0 };
 extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize3301;
-const Il2CppTypeDefinitionSizes g_typeDefinitionSize3301 = { sizeof(ConfigurationCollectionAttribute_t1D7DBAAB4908B6B8F26EA1C66106A67BDE949558), -1, 0, 0 };
+const Il2CppTypeDefinitionSizes g_typeDefinitionSize3301 = { sizeof(colorChip05Ctrl_tF08D5876A85C5ED16C83E629462DB06116D62511), -1, 0, 0 };
 extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize3302;
-const Il2CppTypeDefinitionSizes g_typeDefinitionSize3302 = { sizeof(ConfigurationSectionGroup_tE7948C2D31B193F4BA8828947ED3094B952C7863), -1, 0, 0 };
+const Il2CppTypeDefinitionSizes g_typeDefinitionSize3302 = { sizeof(colorChip06Ctrl_t6835391397F4F0FDA0190D0B63FBE367232AD97F), -1, 0, 0 };
 extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize3303;
-const Il2CppTypeDefinitionSizes g_typeDefinitionSize3303 = { sizeof(IgnoreSection_t43A7C33C0083D18639AA3CC3D75DD93FCF1C5D97), -1, 0, 0 };
+const Il2CppTypeDefinitionSizes g_typeDefinitionSize3303 = { sizeof(colorChip07Ctrl_tF2DF4F42D6FD5A5EF642D6EC674548E5AF63167C), -1, 0, 0 };
 extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize3304;
-const Il2CppTypeDefinitionSizes g_typeDefinitionSize3304 = { sizeof(ThrowStub_t9161280E38728A40D9B1A975AEE62E89C379E400), -1, 0, 0 };
+const Il2CppTypeDefinitionSizes g_typeDefinitionSize3304 = { sizeof(ColorChip00Ctrl_t8862478F0F920693039FBC8ACEE53E7D1205286F), -1, 0, 0 };
 extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize3305;
-const Il2CppTypeDefinitionSizes g_typeDefinitionSize3305 = { sizeof(U3CModuleU3E_tBB65183F1134474D09FF49B95625D25472B9BA8B), -1, 0, 0 };
+const Il2CppTypeDefinitionSizes g_typeDefinitionSize3305 = { sizeof(dt_tF8471EE27817084A987A54FC6D69193AF19B2A35), -1, sizeof(dt_tF8471EE27817084A987A54FC6D69193AF19B2A35_StaticFields), 0 };
 extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize3306;
-const Il2CppTypeDefinitionSizes g_typeDefinitionSize3306 = { sizeof(ColorChip00Ctrl_t8862478F0F920693039FBC8ACEE53E7D1205286F), -1, 0, 0 };
+const Il2CppTypeDefinitionSizes g_typeDefinitionSize3306 = { sizeof(SelectDirector_tCDEB19D8AEBD7B29956BACDD45E383B94028F4B5), -1, 0, 0 };
 extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize3307;
-const Il2CppTypeDefinitionSizes g_typeDefinitionSize3307 = { sizeof(dt_tF8471EE27817084A987A54FC6D69193AF19B2A35), -1, sizeof(dt_tF8471EE27817084A987A54FC6D69193AF19B2A35_StaticFields), 0 };
+const Il2CppTypeDefinitionSizes g_typeDefinitionSize3307 = { sizeof(taptoLeftArrow_tAAC4A554F5728EA2FF8579DD9B1A09C049EFB49B), -1, 0, 0 };
 extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize3308;
-const Il2CppTypeDefinitionSizes g_typeDefinitionSize3308 = { sizeof(SelectDirector_tCDEB19D8AEBD7B29956BACDD45E383B94028F4B5), -1, 0, 0 };
+const Il2CppTypeDefinitionSizes g_typeDefinitionSize3308 = { sizeof(taptoRightArrow_t4907271B667B316B3F8D3D0DF063B5AE58EACF10), -1, 0, 0 };
 extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize3309;
 const Il2CppTypeDefinitionSizes g_typeDefinitionSize3309 = { sizeof(taptoSelect_t714A16D61206D385DF95D2D9EB6E3613414DF754), -1, 0, 0 };
 extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize3310;
-const Il2CppTypeDefinitionSizes g_typeDefinitionSize3310 = { 0, sizeof(Il2CppIActivationFactory*), 0, 0 };
+const Il2CppTypeDefinitionSizes g_typeDefinitionSize3310 = { sizeof(U3CModuleU3E_tDA285F13E9413BF3B79A99D6E310BE9AF3444EEB), -1, 0, 0 };
 extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize3311;
-const Il2CppTypeDefinitionSizes g_typeDefinitionSize3311 = { sizeof(Il2CppComObject), -1, 0, 0 };
+const Il2CppTypeDefinitionSizes g_typeDefinitionSize3311 = { sizeof(ConfigurationElement_tAE3EE71C256825472831FFBB7F491275DFAF089E), -1, 0, 0 };
 extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize3312;
-const Il2CppTypeDefinitionSizes g_typeDefinitionSize3312 = { sizeof(__Il2CppComDelegate_tD0DD2BBA6AC8F151D32B6DFD02F6BDA339F8DC4D), -1, 0, 0 };
+const Il2CppTypeDefinitionSizes g_typeDefinitionSize3312 = { sizeof(ConfigurationSection_t0BC609F0151B160A4FAB8226679B62AF22539C3E), -1, 0, 0 };
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize3313;
+const Il2CppTypeDefinitionSizes g_typeDefinitionSize3313 = { sizeof(int32_t)+ sizeof(RuntimeObject), sizeof(int32_t), 0, 0 };
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize3314;
+const Il2CppTypeDefinitionSizes g_typeDefinitionSize3314 = { sizeof(ConfigurationPropertyCollection_t1DEB95D3283BB11A46B862E9D13710ED698B6C93), -1, 0, 0 };
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize3315;
+const Il2CppTypeDefinitionSizes g_typeDefinitionSize3315 = { sizeof(ConfigurationElementCollection_t56E8398661A85A59616301BADF13026FB1492606), -1, 0, 0 };
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize3316;
+const Il2CppTypeDefinitionSizes g_typeDefinitionSize3316 = { sizeof(ConfigurationCollectionAttribute_t1D7DBAAB4908B6B8F26EA1C66106A67BDE949558), -1, 0, 0 };
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize3317;
+const Il2CppTypeDefinitionSizes g_typeDefinitionSize3317 = { sizeof(ConfigurationSectionGroup_tE7948C2D31B193F4BA8828947ED3094B952C7863), -1, 0, 0 };
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize3318;
+const Il2CppTypeDefinitionSizes g_typeDefinitionSize3318 = { sizeof(IgnoreSection_t43A7C33C0083D18639AA3CC3D75DD93FCF1C5D97), -1, 0, 0 };
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize3319;
+const Il2CppTypeDefinitionSizes g_typeDefinitionSize3319 = { sizeof(ThrowStub_t9161280E38728A40D9B1A975AEE62E89C379E400), -1, 0, 0 };
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize3320;
+const Il2CppTypeDefinitionSizes g_typeDefinitionSize3320 = { 0, sizeof(Il2CppIActivationFactory*), 0, 0 };
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize3321;
+const Il2CppTypeDefinitionSizes g_typeDefinitionSize3321 = { sizeof(Il2CppComObject), -1, 0, 0 };
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize3322;
+const Il2CppTypeDefinitionSizes g_typeDefinitionSize3322 = { sizeof(__Il2CppComDelegate_tD0DD2BBA6AC8F151D32B6DFD02F6BDA339F8DC4D), -1, 0, 0 };
 #ifdef __clang__
 #pragma clang diagnostic pop
 #endif
