@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -7,6 +8,7 @@ public class SelectDirector : MonoBehaviour
 {
     // ゲームオブジェクト
     GameObject[] stylus = new GameObject[8];            // カラーチップポインタ
+    GameObject textFilename;                            // ファイルネーム
 
     // インプットフィールド
     InputField inputfieldAGName;
@@ -28,7 +30,8 @@ public class SelectDirector : MonoBehaviour
         inputfieldAGName = GameObject.Find("inputfieldAGName").GetComponent<InputField>();
 
         // 名前を初期化
-        dt.textAGName = "";
+        dt.textAGName = makeAGName();
+        inputfieldAGName.text = dt.textAGName;
 
         // ペンの色を初期化
         dt.stylusColor = 0;
@@ -53,5 +56,19 @@ public class SelectDirector : MonoBehaviour
     public void GetAGName()
     {
         dt.textAGName = inputfieldAGName.text;
+    }
+
+    string makeAGName()
+    {
+        string newAGName;
+        newAGName = DateTime.Now.Year.ToString();
+        newAGName += DateTime.Now.Month.ToString("D2");
+        newAGName += DateTime.Now.Day.ToString("D2");
+        newAGName += "_";
+        newAGName += DateTime.Now.Hour.ToString("D2");
+        newAGName += DateTime.Now.Minute.ToString("D2");
+        newAGName += DateTime.Now.Second.ToString("D2");
+
+        return newAGName;
     }
 }

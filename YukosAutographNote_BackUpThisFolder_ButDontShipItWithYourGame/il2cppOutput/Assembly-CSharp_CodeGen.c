@@ -44,39 +44,43 @@ extern void colorChip06Ctrl__ctor_mCEDCBE72B05AD15DE14BC46D5FD2825938BBFFCD (voi
 extern void colorChip07Ctrl_onClick_m7A8A3B7B329C4210131A49DB9F7E7E1817919F0D (void);
 // 0x00000010 System.Void colorChip07Ctrl::.ctor()
 extern void colorChip07Ctrl__ctor_m490FEE18860AEBE38BC62707EDCC64E227091A76 (void);
-// 0x00000011 System.Void ColorChip00Ctrl::Start()
-extern void ColorChip00Ctrl_Start_m4314B4D50F5FE814EB93F6FA7A540F27A6327B15 (void);
-// 0x00000012 System.Void ColorChip00Ctrl::Update()
-extern void ColorChip00Ctrl_Update_mCE4C09333B87FB16FD5F20180D58DDC9EBC6346E (void);
-// 0x00000013 System.Void ColorChip00Ctrl::.ctor()
-extern void ColorChip00Ctrl__ctor_m126125328A8437A51CCBB96B2D6BDF31B10F3807 (void);
-// 0x00000014 System.Void dt::.ctor()
+// 0x00000011 System.Void DrawingDirector::Start()
+extern void DrawingDirector_Start_m8592D8D07B6563BBCF4387E56A1295C97192A4F7 (void);
+// 0x00000012 System.Void DrawingDirector::Update()
+extern void DrawingDirector_Update_m0EF484E8CC58FC416A99A74C148E786C37D564AE (void);
+// 0x00000013 System.String DrawingDirector::makeAGName()
+extern void DrawingDirector_makeAGName_mE6369C39C4AF2BC5CAD8919EFFEC9CCC9B7E5C52 (void);
+// 0x00000014 System.Void DrawingDirector::.ctor()
+extern void DrawingDirector__ctor_m65E70220A5EDF6287CF8F736F4657D28DEDA8F5B (void);
+// 0x00000015 System.Void dt::.ctor()
 extern void dt__ctor_m337853F267487070ABBCF7BCBC95EF3197B46E94 (void);
-// 0x00000015 System.Void SelectDirector::Start()
+// 0x00000016 System.Void SelectDirector::Start()
 extern void SelectDirector_Start_mFF0F76F84D2CC751977D85A5EFC9D722D4F0F570 (void);
-// 0x00000016 System.Void SelectDirector::Update()
+// 0x00000017 System.Void SelectDirector::Update()
 extern void SelectDirector_Update_m19D71FABC2AF0F02001C8A06478717D5EBB1791D (void);
-// 0x00000017 System.Void SelectDirector::GetAGName()
+// 0x00000018 System.Void SelectDirector::GetAGName()
 extern void SelectDirector_GetAGName_m9F16229817DAB3E6B68E32109BB8543E088360EF (void);
-// 0x00000018 System.Void SelectDirector::.ctor()
+// 0x00000019 System.String SelectDirector::makeAGName()
+extern void SelectDirector_makeAGName_mD85425F64F0A9A86D861D30C587163047392E230 (void);
+// 0x0000001A System.Void SelectDirector::.ctor()
 extern void SelectDirector__ctor_m7D7B2070C7EDEBCC177D36A9B8855F71B30A5AFC (void);
-// 0x00000019 System.Void taptoLeftArrow::Start()
+// 0x0000001B System.Void taptoDrawing::onClick()
+extern void taptoDrawing_onClick_m99DD71668B0BC9881BB2FFBD40764E0AE97368A1 (void);
+// 0x0000001C System.Void taptoDrawing::.ctor()
+extern void taptoDrawing__ctor_mBF5640692796CB2D284B7A96CF575736C9FEEDEE (void);
+// 0x0000001D System.Void taptoLeftArrow::Start()
 extern void taptoLeftArrow_Start_mB3FC7E2662F176880F144F8263D670435B07EBE5 (void);
-// 0x0000001A System.Void taptoLeftArrow::onClick()
+// 0x0000001E System.Void taptoLeftArrow::onClick()
 extern void taptoLeftArrow_onClick_m462FABCAABDF30E643672BC0A41B65221E3ADCE6 (void);
-// 0x0000001B System.Void taptoLeftArrow::.ctor()
+// 0x0000001F System.Void taptoLeftArrow::.ctor()
 extern void taptoLeftArrow__ctor_m67E7EC5B5EABC0BB9599E4FCA8023B9E6515838C (void);
-// 0x0000001C System.Void taptoRightArrow::Start()
+// 0x00000020 System.Void taptoRightArrow::Start()
 extern void taptoRightArrow_Start_m193B4D4C1F17E0C92ACED38C374D2902A36110D5 (void);
-// 0x0000001D System.Void taptoRightArrow::onClick()
+// 0x00000021 System.Void taptoRightArrow::onClick()
 extern void taptoRightArrow_onClick_mF19754FEBF152AB71EE8D90137392FD478CC17B6 (void);
-// 0x0000001E System.Void taptoRightArrow::.ctor()
+// 0x00000022 System.Void taptoRightArrow::.ctor()
 extern void taptoRightArrow__ctor_mE6FB37D8993615A5FB31E547A99A5C249D411E4D (void);
-// 0x0000001F System.Void taptoSelect::onClick()
-extern void taptoSelect_onClick_mEEB46BBF20233F2C6227AA8D2939FA131C643863 (void);
-// 0x00000020 System.Void taptoSelect::.ctor()
-extern void taptoSelect__ctor_m453D218AC99C3CD6751B9876424DDC357AC80C80 (void);
-static Il2CppMethodPointer s_methodPointers[32] = 
+static Il2CppMethodPointer s_methodPointers[34] = 
 {
 	colorChip00Ctrl_onClick_m290D79CE1C5CF69D25BD3CEA65BAE561B4A0B74D,
 	colorChip00Ctrl__ctor_m6BF4355126E28009E1E83684C8016571617760D5,
@@ -94,24 +98,26 @@ static Il2CppMethodPointer s_methodPointers[32] =
 	colorChip06Ctrl__ctor_mCEDCBE72B05AD15DE14BC46D5FD2825938BBFFCD,
 	colorChip07Ctrl_onClick_m7A8A3B7B329C4210131A49DB9F7E7E1817919F0D,
 	colorChip07Ctrl__ctor_m490FEE18860AEBE38BC62707EDCC64E227091A76,
-	ColorChip00Ctrl_Start_m4314B4D50F5FE814EB93F6FA7A540F27A6327B15,
-	ColorChip00Ctrl_Update_mCE4C09333B87FB16FD5F20180D58DDC9EBC6346E,
-	ColorChip00Ctrl__ctor_m126125328A8437A51CCBB96B2D6BDF31B10F3807,
+	DrawingDirector_Start_m8592D8D07B6563BBCF4387E56A1295C97192A4F7,
+	DrawingDirector_Update_m0EF484E8CC58FC416A99A74C148E786C37D564AE,
+	DrawingDirector_makeAGName_mE6369C39C4AF2BC5CAD8919EFFEC9CCC9B7E5C52,
+	DrawingDirector__ctor_m65E70220A5EDF6287CF8F736F4657D28DEDA8F5B,
 	dt__ctor_m337853F267487070ABBCF7BCBC95EF3197B46E94,
 	SelectDirector_Start_mFF0F76F84D2CC751977D85A5EFC9D722D4F0F570,
 	SelectDirector_Update_m19D71FABC2AF0F02001C8A06478717D5EBB1791D,
 	SelectDirector_GetAGName_m9F16229817DAB3E6B68E32109BB8543E088360EF,
+	SelectDirector_makeAGName_mD85425F64F0A9A86D861D30C587163047392E230,
 	SelectDirector__ctor_m7D7B2070C7EDEBCC177D36A9B8855F71B30A5AFC,
+	taptoDrawing_onClick_m99DD71668B0BC9881BB2FFBD40764E0AE97368A1,
+	taptoDrawing__ctor_mBF5640692796CB2D284B7A96CF575736C9FEEDEE,
 	taptoLeftArrow_Start_mB3FC7E2662F176880F144F8263D670435B07EBE5,
 	taptoLeftArrow_onClick_m462FABCAABDF30E643672BC0A41B65221E3ADCE6,
 	taptoLeftArrow__ctor_m67E7EC5B5EABC0BB9599E4FCA8023B9E6515838C,
 	taptoRightArrow_Start_m193B4D4C1F17E0C92ACED38C374D2902A36110D5,
 	taptoRightArrow_onClick_mF19754FEBF152AB71EE8D90137392FD478CC17B6,
 	taptoRightArrow__ctor_mE6FB37D8993615A5FB31E547A99A5C249D411E4D,
-	taptoSelect_onClick_mEEB46BBF20233F2C6227AA8D2939FA131C643863,
-	taptoSelect__ctor_m453D218AC99C3CD6751B9876424DDC357AC80C80,
 };
-static const int32_t s_InvokerIndices[32] = 
+static const int32_t s_InvokerIndices[34] = 
 {
 	3206,
 	3206,
@@ -131,11 +137,13 @@ static const int32_t s_InvokerIndices[32] =
 	3206,
 	3206,
 	3206,
+	3125,
 	3206,
 	3206,
 	3206,
 	3206,
 	3206,
+	3125,
 	3206,
 	3206,
 	3206,
@@ -150,7 +158,7 @@ IL2CPP_EXTERN_C const Il2CppCodeGenModule g_AssemblyU2DCSharp_CodeGenModule;
 const Il2CppCodeGenModule g_AssemblyU2DCSharp_CodeGenModule = 
 {
 	"Assembly-CSharp.dll",
-	32,
+	34,
 	s_methodPointers,
 	0,
 	NULL,

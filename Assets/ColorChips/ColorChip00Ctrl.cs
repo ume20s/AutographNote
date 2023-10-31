@@ -2,17 +2,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ColorChip00Ctrl : MonoBehaviour
+public class colorChip00Ctrl : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    public void onClick()
     {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        dt.stylusColor = 0;
     }
 }

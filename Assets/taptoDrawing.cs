@@ -3,12 +3,12 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class taptoSelect : MonoBehaviour
+public class taptoDrawing : MonoBehaviour
 {
-       // タップしたら
+    // タップしたら
     public void onClick()
     {
-        // 最初のステージへ
-        SceneManager.LoadScene("select");
+        // サインをもらう画面へ
+        SceneManager.LoadScene("drawing");
     }
 }

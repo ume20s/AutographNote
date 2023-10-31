@@ -3712,13 +3712,22 @@ struct MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71  : public Behavio
 {
 };
 
+// DrawingDirector
+struct DrawingDirector_tDFE4D80C64D95E9FBA3CBA77B701449EEAE617FF  : public MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71
+{
+	// UnityEngine.UI.InputField DrawingDirector::inputfieldAGName
+	InputField_tABEA115F23FBD374EBE80D4FAC1D15BD6E37A140* ___inputfieldAGName_4;
+};
+
 // SelectDirector
 struct SelectDirector_tCDEB19D8AEBD7B29956BACDD45E383B94028F4B5  : public MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71
 {
 	// UnityEngine.GameObject[] SelectDirector::stylus
 	GameObjectU5BU5D_tFF67550DFCE87096D7A3734EA15B75896B2722CF* ___stylus_4;
+	// UnityEngine.GameObject SelectDirector::textFilename
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___textFilename_5;
 	// UnityEngine.UI.InputField SelectDirector::inputfieldAGName
-	InputField_tABEA115F23FBD374EBE80D4FAC1D15BD6E37A140* ___inputfieldAGName_5;
+	InputField_tABEA115F23FBD374EBE80D4FAC1D15BD6E37A140* ___inputfieldAGName_6;
 };
 
 // dt
@@ -4371,16 +4380,19 @@ IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable3288[3] =
 IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable3293[3] = 
 {
 	static_cast<int32_t>(offsetof(XmlReader_t4C709DEF5F01606ECB60B638F1BD6F6E0A9116FD_StaticFields, ___IsTextualNodeBitmap_0)),static_cast<int32_t>(offsetof(XmlReader_t4C709DEF5F01606ECB60B638F1BD6F6E0A9116FD_StaticFields, ___CanReadContentAsBitmap_1)),static_cast<int32_t>(offsetof(XmlReader_t4C709DEF5F01606ECB60B638F1BD6F6E0A9116FD_StaticFields, ___HasValueBitmap_2)),};
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable3304[1] = 
+{
+	static_cast<int32_t>(offsetof(DrawingDirector_tDFE4D80C64D95E9FBA3CBA77B701449EEAE617FF, ___inputfieldAGName_4)),};
 IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable3305[3] = 
 {
 	static_cast<int32_t>(offsetof(dt_tF8471EE27817084A987A54FC6D69193AF19B2A35_StaticFields, ___stylusColor_4)),static_cast<int32_t>(offsetof(dt_tF8471EE27817084A987A54FC6D69193AF19B2A35_StaticFields, ___backgorundColor_5)),static_cast<int32_t>(offsetof(dt_tF8471EE27817084A987A54FC6D69193AF19B2A35_StaticFields, ___textAGName_6)),};
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable3306[2] = 
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable3306[3] = 
 {
-	static_cast<int32_t>(offsetof(SelectDirector_tCDEB19D8AEBD7B29956BACDD45E383B94028F4B5, ___stylus_4)),static_cast<int32_t>(offsetof(SelectDirector_tCDEB19D8AEBD7B29956BACDD45E383B94028F4B5, ___inputfieldAGName_5)),};
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable3307[3] = 
+	static_cast<int32_t>(offsetof(SelectDirector_tCDEB19D8AEBD7B29956BACDD45E383B94028F4B5, ___stylus_4)),static_cast<int32_t>(offsetof(SelectDirector_tCDEB19D8AEBD7B29956BACDD45E383B94028F4B5, ___textFilename_5)),static_cast<int32_t>(offsetof(SelectDirector_tCDEB19D8AEBD7B29956BACDD45E383B94028F4B5, ___inputfieldAGName_6)),};
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable3308[3] = 
 {
 	static_cast<int32_t>(offsetof(taptoLeftArrow_tAAC4A554F5728EA2FF8579DD9B1A09C049EFB49B, ___background_4)),static_cast<int32_t>(offsetof(taptoLeftArrow_tAAC4A554F5728EA2FF8579DD9B1A09C049EFB49B, ___spriteRenderer_5)),static_cast<int32_t>(offsetof(taptoLeftArrow_tAAC4A554F5728EA2FF8579DD9B1A09C049EFB49B, ___backgroundSprite_6)),};
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable3308[3] = 
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable3309[3] = 
 {
 	static_cast<int32_t>(offsetof(taptoRightArrow_t4907271B667B316B3F8D3D0DF063B5AE58EACF10, ___background_4)),static_cast<int32_t>(offsetof(taptoRightArrow_t4907271B667B316B3F8D3D0DF063B5AE58EACF10, ___spriteRenderer_5)),static_cast<int32_t>(offsetof(taptoRightArrow_t4907271B667B316B3F8D3D0DF063B5AE58EACF10, ___backgroundSprite_6)),};
 IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable3313[4] = 

@@ -43186,9 +43186,11 @@ struct ButtonStripField_tE6F879C441B5054B9905705BD471FD45AF928AED  : public Base
 	List_1_tC00102DBD817DEFEFB8F502995809E47ED0DEC6D* ___m_Buttons_90;
 };
 
-// ColorChip00Ctrl
-struct ColorChip00Ctrl_t8862478F0F920693039FBC8ACEE53E7D1205286F  : public MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71
+// DrawingDirector
+struct DrawingDirector_tDFE4D80C64D95E9FBA3CBA77B701449EEAE617FF  : public MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71
 {
+	// UnityEngine.UI.InputField DrawingDirector::inputfieldAGName
+	InputField_tABEA115F23FBD374EBE80D4FAC1D15BD6E37A140* ___inputfieldAGName_4;
 };
 
 // UnityEngine.UIElements.DropdownField
@@ -43469,8 +43471,10 @@ struct SelectDirector_tCDEB19D8AEBD7B29956BACDD45E383B94028F4B5  : public MonoBe
 {
 	// UnityEngine.GameObject[] SelectDirector::stylus
 	GameObjectU5BU5D_tFF67550DFCE87096D7A3734EA15B75896B2722CF* ___stylus_4;
+	// UnityEngine.GameObject SelectDirector::textFilename
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___textFilename_5;
 	// UnityEngine.UI.InputField SelectDirector::inputfieldAGName
-	InputField_tABEA115F23FBD374EBE80D4FAC1D15BD6E37A140* ___inputfieldAGName_5;
+	InputField_tABEA115F23FBD374EBE80D4FAC1D15BD6E37A140* ___inputfieldAGName_6;
 };
 
 // System.Reflection.SignatureArrayType
@@ -43603,6 +43607,11 @@ struct dt_tF8471EE27817084A987A54FC6D69193AF19B2A35_StaticFields
 	String_t* ___textAGName_6;
 };
 
+// taptoDrawing
+struct taptoDrawing_tA8D69C30BF7D97623129E94DB98614284154BF8E  : public MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71
+{
+};
+
 // taptoLeftArrow
 struct taptoLeftArrow_tAAC4A554F5728EA2FF8579DD9B1A09C049EFB49B  : public MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71
 {
@@ -43623,11 +43632,6 @@ struct taptoRightArrow_t4907271B667B316B3F8D3D0DF063B5AE58EACF10  : public MonoB
 	SpriteRenderer_t1DD7FE258F072E1FA87D6577BA27225892B8047B* ___spriteRenderer_5;
 	// UnityEngine.Sprite[] taptoRightArrow::backgroundSprite
 	SpriteU5BU5D_tCEE379E10CAD9DBFA770B331480592548ED0EA1B* ___backgroundSprite_6;
-};
-
-// taptoSelect
-struct taptoSelect_t714A16D61206D385DF95D2D9EB6E3613414DF754  : public MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71
-{
 };
 
 // UnityEngine.UI.Dropdown/DropdownItem
@@ -51306,17 +51310,17 @@ const Il2CppTypeDefinitionSizes g_typeDefinitionSize3302 = { sizeof(colorChip06C
 extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize3303;
 const Il2CppTypeDefinitionSizes g_typeDefinitionSize3303 = { sizeof(colorChip07Ctrl_tF2DF4F42D6FD5A5EF642D6EC674548E5AF63167C), -1, 0, 0 };
 extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize3304;
-const Il2CppTypeDefinitionSizes g_typeDefinitionSize3304 = { sizeof(ColorChip00Ctrl_t8862478F0F920693039FBC8ACEE53E7D1205286F), -1, 0, 0 };
+const Il2CppTypeDefinitionSizes g_typeDefinitionSize3304 = { sizeof(DrawingDirector_tDFE4D80C64D95E9FBA3CBA77B701449EEAE617FF), -1, 0, 0 };
 extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize3305;
 const Il2CppTypeDefinitionSizes g_typeDefinitionSize3305 = { sizeof(dt_tF8471EE27817084A987A54FC6D69193AF19B2A35), -1, sizeof(dt_tF8471EE27817084A987A54FC6D69193AF19B2A35_StaticFields), 0 };
 extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize3306;
 const Il2CppTypeDefinitionSizes g_typeDefinitionSize3306 = { sizeof(SelectDirector_tCDEB19D8AEBD7B29956BACDD45E383B94028F4B5), -1, 0, 0 };
 extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize3307;
-const Il2CppTypeDefinitionSizes g_typeDefinitionSize3307 = { sizeof(taptoLeftArrow_tAAC4A554F5728EA2FF8579DD9B1A09C049EFB49B), -1, 0, 0 };
+const Il2CppTypeDefinitionSizes g_typeDefinitionSize3307 = { sizeof(taptoDrawing_tA8D69C30BF7D97623129E94DB98614284154BF8E), -1, 0, 0 };
 extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize3308;
-const Il2CppTypeDefinitionSizes g_typeDefinitionSize3308 = { sizeof(taptoRightArrow_t4907271B667B316B3F8D3D0DF063B5AE58EACF10), -1, 0, 0 };
+const Il2CppTypeDefinitionSizes g_typeDefinitionSize3308 = { sizeof(taptoLeftArrow_tAAC4A554F5728EA2FF8579DD9B1A09C049EFB49B), -1, 0, 0 };
 extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize3309;
-const Il2CppTypeDefinitionSizes g_typeDefinitionSize3309 = { sizeof(taptoSelect_t714A16D61206D385DF95D2D9EB6E3613414DF754), -1, 0, 0 };
+const Il2CppTypeDefinitionSizes g_typeDefinitionSize3309 = { sizeof(taptoRightArrow_t4907271B667B316B3F8D3D0DF063B5AE58EACF10), -1, 0, 0 };
 extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize3310;
 const Il2CppTypeDefinitionSizes g_typeDefinitionSize3310 = { sizeof(U3CModuleU3E_tDA285F13E9413BF3B79A99D6E310BE9AF3444EEB), -1, 0, 0 };
 extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize3311;
