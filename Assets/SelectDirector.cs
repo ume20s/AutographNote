@@ -8,7 +8,6 @@ public class SelectDirector : MonoBehaviour
 {
     // ゲームオブジェクト
     GameObject[] stylus = new GameObject[8];            // カラーチップポインタ
-    GameObject textFilename;                            // ファイルネーム
 
     // インプットフィールド
     InputField inputfieldAGName;
