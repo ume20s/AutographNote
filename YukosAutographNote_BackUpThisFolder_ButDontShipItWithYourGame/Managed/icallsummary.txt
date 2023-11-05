@@ -241,6 +241,7 @@ UnityEngine.CanvasRenderer::set_cull
 UnityEngine.CanvasRenderer::set_hasPopInstruction
 UnityEngine.CanvasRenderer::set_materialCount
 UnityEngine.CanvasRenderer::set_popMaterialCount
+UnityEngine.ColorUtility::DoTryParseHtmlColor
 UnityEngine.Component::GetComponentFastPath
 UnityEngine.Component::GetComponentsForListInternal
 UnityEngine.Component::get_gameObject
