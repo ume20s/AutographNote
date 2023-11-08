@@ -42,69 +42,8 @@ public class DrawingDirector : MonoBehaviour
         inputfieldAGName.text = dt.textAGName;
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        int r = 24;                 // ペンのサイズ
-
-        var camera = Camera.main;
-        if(Input.GetMouseButton(0)) {
-        	var pos = Input.mousePosition;
-            var p_pos = Vector2.zero;
-            RectTransformUtility.ScreenPointToLocalPointInRectangle(AGImage.gameObject.GetComponent<RectTransform>(), pos, camera, out p_pos);
-            if(p_pos.x>-425 && p_pos.x<425 && p_pos.y>-600 && p_pos.y<600) {
-                for (int h=0; h<r; h++) {
-                    int y = (int)(p_pos.y + h - 600);
-                    for(int w=0; w<r; w++) {
-                        int x = (int)(p_pos.x + w - 425);
-                        AGTexture.SetPixel(x, y, penColor);
-                    }
-                }
-                AGTexture.Apply();
-            }
-            // Debug.Log(p_pos);
-        }
-    }
-
-    // ドラッグして描画
-    public void OnDrag(BaseEventData e)
-    {
-        /*
-
-        // ペンサイズ
-        int r = 16;
-
-        // タッチデータの取得
-        PointerEventData _event = e as PointerEventData;
-
-        // 押されているときの処理
-        nowPos = _event.position;
-
-        var dir  = prePos - nowPos;
-        var dist = (int)dir.magnitude;
-        dir = dir.normalized;
-        for(int d=0; d<dist; d++) {
-            var p_pos = nowPos + dir * d;
-            p_pos.y -= r/2.0f;
-            p_pos.x -= r/2.0f;
-            for (int h=0; h<r; h++) {
-                int y = (int)(p_pos.y + h);
-                if(y < 0 || y > AGTexture.height) continue;
-                for(int w=0; w<r; ++w) {
-                    int x = (int)(p_pos.x + w);
-                    if (x >= 0 && x <= AGTexture.width) {
-                        AGTexture.SetPixel(x, y, penColor);
-                    }
-                }
-            }
-        }
-        AGTexture.Apply();
-        prePos = nowPos;
-
-        */
-    }
-
-    string makeAGName()
+    // デフォルトサイン名の生成
+    private string makeAGName()
     {
         string newAGName;
         newAGName = DateTime.Now.Year.ToString();
@@ -116,6 +55,78 @@ public class DrawingDirector : MonoBehaviour
         newAGName += DateTime.Now.Second.ToString("D2");
 
         return newAGName;
+    }
+
+    // ドラッグして描画
+    public void OnDrag(BaseEventData e)
+    {
+        // ペンサイズ
+        int r = 20;
+
+        // タッチデータの取得
+        PointerEventData _event = e as PointerEventData;
+
+        // ドラッグ座標をテクスチャのローカル座標に変換
+        RectTransformUtility.ScreenPointToLocalPointInRectangle(
+            AGImage.gameObject.GetComponent<RectTransform>(), 
+            _event.position, 
+            Camera.main, 
+            out nowPos);
+        
+        // 範囲内だったら描画
+        int geta = r / 2;
+        if(nowPos.x>-425+geta && nowPos.x<425-geta && nowPos.y>-600+geta && nowPos.y<600-geta) {
+            var dir  = prePos - nowPos;
+            var dist = (int)dir.magnitude;
+            dir = dir.normalized;
+            for(int d=0; d<dist; d++) {
+                var p_pos = nowPos + dir * d;
+                for (int h=0; h<r; h++) {
+                    int y = (int)(p_pos.y + h - 600 - geta);
+                    for(int w=0; w<r; ++w) {
+                        int x = (int)(p_pos.x + w - 425 - geta);
+                        AGTexture.SetPixel(x, y, penColor);
+                    }
+                }
+            }
+        }
+        AGTexture.Apply();
+
+        // 現在の座標をとっとく
+        prePos = nowPos;
+    }
+
+    // タップして点を描画
+    public void OnTap(BaseEventData e)
+    {
+        // ペンサイズ
+        int r = 20;
+
+        // タッチデータの取得
+        PointerEventData _event = e as PointerEventData;
+
+        // ドラッグ座標をテクスチャのローカル座標に変換
+        RectTransformUtility.ScreenPointToLocalPointInRectangle(
+            AGImage.gameObject.GetComponent<RectTransform>(), 
+            _event.position, 
+            Camera.main, 
+            out nowPos);
+        
+        // 範囲内だったら描画
+        int geta = r / 2;
+        if(nowPos.x>-425+geta && nowPos.x<425-geta && nowPos.y>-600+geta && nowPos.y<600-geta) {
+            for (int h=0; h<r; h++) {
+                int y = (int)(nowPos.y + h - 600 - geta);
+                for(int w=0; w<r; ++w) {
+                    int x = (int)(nowPos.x + w - 425 - geta);
+                    AGTexture.SetPixel(x, y, penColor);
+                }
+            }
+        }
+        AGTexture.Apply();
+
+        // 現在の座標をとっとく
+        prePos = nowPos;
     }
 
     // 背景色で全面を塗りつぶす
