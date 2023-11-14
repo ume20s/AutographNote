@@ -8,7 +8,7 @@ using UnityEngine.UI;
 public class DrawingDirector : MonoBehaviour
 {
     public RawImage AGImage;                // RAWイメージ
-    private Texture2D AGTexture;            // テクスチャ２Ｄ
+    public static Texture2D AGTexture;             // テクスチャ２Ｄ
     InputField inputfieldAGName;            // インプットフィールド
     Color penColor;                         // ペン色
     Color bgColor;                          // 背景色
