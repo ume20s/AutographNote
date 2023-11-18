@@ -92,9 +92,29 @@ extern void taptoRightArrow_onClick_mF19754FEBF152AB71EE8D90137392FD478CC17B6 (v
 extern void taptoRightArrow__ctor_mE6FB37D8993615A5FB31E547A99A5C249D411E4D (void);
 // 0x00000028 System.Void taptoSaveAndNext::onClick()
 extern void taptoSaveAndNext_onClick_m7D5385FC5FCE9A9797DD12A1CDBE2A829A12AD0D (void);
-// 0x00000029 System.Void taptoSaveAndNext::.ctor()
+// 0x00000029 System.Collections.IEnumerable taptoSaveAndNext::WaitOneFrame()
+extern void taptoSaveAndNext_WaitOneFrame_mE172D19343BB5A306748FDF149808E351E78CA8C (void);
+// 0x0000002A System.Void taptoSaveAndNext::ScanMedia(System.String)
+extern void taptoSaveAndNext_ScanMedia_m629223373E2F376556475BE10C7841071FE23F6F (void);
+// 0x0000002B System.Void taptoSaveAndNext::.ctor()
 extern void taptoSaveAndNext__ctor_m7DC3CFF1AE4F361EE766025F8C646363C04EC170 (void);
-static Il2CppMethodPointer s_methodPointers[41] = 
+// 0x0000002C System.Void taptoSaveAndNext/<WaitOneFrame>d__1::.ctor(System.Int32)
+extern void U3CWaitOneFrameU3Ed__1__ctor_mEAA47A8BA1E916A222176BF87A4CAD90A68DA9D7 (void);
+// 0x0000002D System.Void taptoSaveAndNext/<WaitOneFrame>d__1::System.IDisposable.Dispose()
+extern void U3CWaitOneFrameU3Ed__1_System_IDisposable_Dispose_m7D2C0E419F69FC02519340E6B6BF149AE1E7C64E (void);
+// 0x0000002E System.Boolean taptoSaveAndNext/<WaitOneFrame>d__1::MoveNext()
+extern void U3CWaitOneFrameU3Ed__1_MoveNext_mD699B0E6E7CE9341025418FBD36012DC8DB890AA (void);
+// 0x0000002F System.Object taptoSaveAndNext/<WaitOneFrame>d__1::System.Collections.Generic.IEnumerator<System.Object>.get_Current()
+extern void U3CWaitOneFrameU3Ed__1_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_mA395E9077EDAC499EE95CB0A9C0963B559EE0260 (void);
+// 0x00000030 System.Void taptoSaveAndNext/<WaitOneFrame>d__1::System.Collections.IEnumerator.Reset()
+extern void U3CWaitOneFrameU3Ed__1_System_Collections_IEnumerator_Reset_m130D59DD84C2025218300973689F68F77BBE743E (void);
+// 0x00000031 System.Object taptoSaveAndNext/<WaitOneFrame>d__1::System.Collections.IEnumerator.get_Current()
+extern void U3CWaitOneFrameU3Ed__1_System_Collections_IEnumerator_get_Current_m3A240E74827DE44229CB2994B60E4138B7F536B3 (void);
+// 0x00000032 System.Collections.Generic.IEnumerator`1<System.Object> taptoSaveAndNext/<WaitOneFrame>d__1::System.Collections.Generic.IEnumerable<System.Object>.GetEnumerator()
+extern void U3CWaitOneFrameU3Ed__1_System_Collections_Generic_IEnumerableU3CSystem_ObjectU3E_GetEnumerator_mE47123022B1D6E2F771212098296B632454CD0EA (void);
+// 0x00000033 System.Collections.IEnumerator taptoSaveAndNext/<WaitOneFrame>d__1::System.Collections.IEnumerable.GetEnumerator()
+extern void U3CWaitOneFrameU3Ed__1_System_Collections_IEnumerable_GetEnumerator_m1468E2EA19789A8EEA6E05CBE13E40BC419AE888 (void);
+static Il2CppMethodPointer s_methodPointers[51] = 
 {
 	colorChip00Ctrl_onClick_m290D79CE1C5CF69D25BD3CEA65BAE561B4A0B74D,
 	colorChip00Ctrl__ctor_m6BF4355126E28009E1E83684C8016571617760D5,
@@ -136,9 +156,19 @@ static Il2CppMethodPointer s_methodPointers[41] =
 	taptoRightArrow_onClick_mF19754FEBF152AB71EE8D90137392FD478CC17B6,
 	taptoRightArrow__ctor_mE6FB37D8993615A5FB31E547A99A5C249D411E4D,
 	taptoSaveAndNext_onClick_m7D5385FC5FCE9A9797DD12A1CDBE2A829A12AD0D,
+	taptoSaveAndNext_WaitOneFrame_mE172D19343BB5A306748FDF149808E351E78CA8C,
+	taptoSaveAndNext_ScanMedia_m629223373E2F376556475BE10C7841071FE23F6F,
 	taptoSaveAndNext__ctor_m7DC3CFF1AE4F361EE766025F8C646363C04EC170,
+	U3CWaitOneFrameU3Ed__1__ctor_mEAA47A8BA1E916A222176BF87A4CAD90A68DA9D7,
+	U3CWaitOneFrameU3Ed__1_System_IDisposable_Dispose_m7D2C0E419F69FC02519340E6B6BF149AE1E7C64E,
+	U3CWaitOneFrameU3Ed__1_MoveNext_mD699B0E6E7CE9341025418FBD36012DC8DB890AA,
+	U3CWaitOneFrameU3Ed__1_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_mA395E9077EDAC499EE95CB0A9C0963B559EE0260,
+	U3CWaitOneFrameU3Ed__1_System_Collections_IEnumerator_Reset_m130D59DD84C2025218300973689F68F77BBE743E,
+	U3CWaitOneFrameU3Ed__1_System_Collections_IEnumerator_get_Current_m3A240E74827DE44229CB2994B60E4138B7F536B3,
+	U3CWaitOneFrameU3Ed__1_System_Collections_Generic_IEnumerableU3CSystem_ObjectU3E_GetEnumerator_mE47123022B1D6E2F771212098296B632454CD0EA,
+	U3CWaitOneFrameU3Ed__1_System_Collections_IEnumerable_GetEnumerator_m1468E2EA19789A8EEA6E05CBE13E40BC419AE888,
 };
-static const int32_t s_InvokerIndices[41] = 
+static const int32_t s_InvokerIndices[51] = 
 {
 	3206,
 	3206,
@@ -163,7 +193,7 @@ static const int32_t s_InvokerIndices[41] =
 	3206,
 	3206,
 	3206,
-	4941,
+	4940,
 	3206,
 	3206,
 	3206,
@@ -180,13 +210,23 @@ static const int32_t s_InvokerIndices[41] =
 	3206,
 	3206,
 	3206,
+	4916,
+	4841,
 	3206,
+	2607,
+	3206,
+	3070,
+	3125,
+	3206,
+	3125,
+	3125,
+	3125,
 };
 IL2CPP_EXTERN_C const Il2CppCodeGenModule g_AssemblyU2DCSharp_CodeGenModule;
 const Il2CppCodeGenModule g_AssemblyU2DCSharp_CodeGenModule = 
 {
 	"Assembly-CSharp.dll",
-	41,
+	51,
 	s_methodPointers,
 	0,
 	NULL,
