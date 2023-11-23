@@ -1643,12 +1643,12 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector2_t1FD6F485C871E832B347AB2D
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Texture2D_SetPixel_m2CCFC5F729135D59DC4A697C2605A3FC5C8574DB (Texture2D_tE6505BC111DD8A424A9DBE8E05D7D09E11FFFCF4* __this, int32_t ___x0, int32_t ___y1, Color_tD001788D726C3A7F1379BEED0260B9591F440C1F ___color2, const RuntimeMethod* method) ;
 // System.Void UnityEngine.Texture2D::Apply()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Texture2D_Apply_mA014182C9EE0BBF6EEE3B286854F29E50EB972DC (Texture2D_tE6505BC111DD8A424A9DBE8E05D7D09E11FFFCF4* __this, const RuntimeMethod* method) ;
+// System.String UnityEngine.UI.InputField::get_text()
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR String_t* InputField_get_text_m6E0796350FF559505E4DF17311803962699D6704_inline (InputField_tABEA115F23FBD374EBE80D4FAC1D15BD6E37A140* __this, const RuntimeMethod* method) ;
 // System.String SelectDirector::makeAGName()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* SelectDirector_makeAGName_mD85425F64F0A9A86D861D30C587163047392E230 (SelectDirector_tCDEB19D8AEBD7B29956BACDD45E383B94028F4B5* __this, const RuntimeMethod* method) ;
 // System.Void UnityEngine.GameObject::SetActive(System.Boolean)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92 (GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* __this, bool ___value0, const RuntimeMethod* method) ;
-// System.String UnityEngine.UI.InputField::get_text()
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR String_t* InputField_get_text_m6E0796350FF559505E4DF17311803962699D6704_inline (InputField_tABEA115F23FBD374EBE80D4FAC1D15BD6E37A140* __this, const RuntimeMethod* method) ;
 // System.Void UnityEngine.SceneManagement.SceneManager::LoadScene(System.String)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SceneManager_LoadScene_mBB3DBC1601A21F8F4E8A5D68FED30EA9412F218E (String_t* ___sceneName0, const RuntimeMethod* method) ;
 // T UnityEngine.GameObject::GetComponent<UnityEngine.SpriteRenderer>()
@@ -2225,8 +2225,8 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DrawingDirector_OnDrag_mC62E72D1A593FE6D
 	int32_t V_9 = 0;
 	int32_t V_10 = 0;
 	{
-		// int r = 20;
-		V_0 = ((int32_t)20);
+		// int r = 16;
+		V_0 = ((int32_t)16);
 		// PointerEventData _event = e as PointerEventData;
 		BaseEventData_tE03A848325C0AE8E76C6CA15FD86395EBF83364F* L_0 = ___e0;
 		V_1 = ((PointerEventData_t9670F3C7D823CCB738A1604C72A1EB90292396FB*)IsInstClass((RuntimeObject*)L_0, PointerEventData_t9670F3C7D823CCB738A1604C72A1EB90292396FB_il2cpp_TypeInfo_var));
@@ -2650,6 +2650,28 @@ IL_002b:
 		Texture2D_tE6505BC111DD8A424A9DBE8E05D7D09E11FFFCF4* L_10 = ((DrawingDirector_tDFE4D80C64D95E9FBA3CBA77B701449EEAE617FF_StaticFields*)il2cpp_codegen_static_fields_for(DrawingDirector_tDFE4D80C64D95E9FBA3CBA77B701449EEAE617FF_il2cpp_TypeInfo_var))->___AGTexture_5;
 		NullCheck(L_10);
 		Texture2D_Apply_mA014182C9EE0BBF6EEE3B286854F29E50EB972DC(L_10, NULL);
+		// }
+		return;
+	}
+}
+// System.Void DrawingDirector::GetAGName()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DrawingDirector_GetAGName_m9915D2AFBE5FCF97530E0032D56B5A56B3171D27 (DrawingDirector_tDFE4D80C64D95E9FBA3CBA77B701449EEAE617FF* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&dt_tF8471EE27817084A987A54FC6D69193AF19B2A35_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// dt.textAGName = inputfieldAGName.text;
+		InputField_tABEA115F23FBD374EBE80D4FAC1D15BD6E37A140* L_0 = __this->___inputfieldAGName_6;
+		NullCheck(L_0);
+		String_t* L_1;
+		L_1 = InputField_get_text_m6E0796350FF559505E4DF17311803962699D6704_inline(L_0, NULL);
+		il2cpp_codegen_runtime_class_init_inline(dt_tF8471EE27817084A987A54FC6D69193AF19B2A35_il2cpp_TypeInfo_var);
+		((dt_tF8471EE27817084A987A54FC6D69193AF19B2A35_StaticFields*)il2cpp_codegen_static_fields_for(dt_tF8471EE27817084A987A54FC6D69193AF19B2A35_il2cpp_TypeInfo_var))->___textAGName_6 = L_1;
+		Il2CppCodeGenWriteBarrier((void**)(&((dt_tF8471EE27817084A987A54FC6D69193AF19B2A35_StaticFields*)il2cpp_codegen_static_fields_for(dt_tF8471EE27817084A987A54FC6D69193AF19B2A35_il2cpp_TypeInfo_var))->___textAGName_6), (void*)L_1);
 		// }
 		return;
 	}

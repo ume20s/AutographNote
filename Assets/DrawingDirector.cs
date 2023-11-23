@@ -8,7 +8,7 @@ using UnityEngine.UI;
 public class DrawingDirector : MonoBehaviour
 {
     public RawImage AGImage;                // RAWイメージ
-    public static Texture2D AGTexture;             // テクスチャ２Ｄ
+    public static Texture2D AGTexture;      // テクスチャ２Ｄ
     InputField inputfieldAGName;            // インプットフィールド
     Color penColor;                         // ペン色
     Color bgColor;                          // 背景色
@@ -61,7 +61,7 @@ public class DrawingDirector : MonoBehaviour
     public void OnDrag(BaseEventData e)
     {
         // ペンサイズ
-        int r = 20;
+        int r = 16;
 
         // タッチデータの取得
         PointerEventData _event = e as PointerEventData;
@@ -138,5 +138,11 @@ public class DrawingDirector : MonoBehaviour
             }
         }
         AGTexture.Apply();
+    }
+
+    // インプットフィールドに入力された名前を格納
+    public void GetAGName()
+    {
+        dt.textAGName = inputfieldAGName.text;
     }
 }
